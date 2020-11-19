@@ -2,26 +2,26 @@
 ##### configure machine for development using ubuntu version 18.
 
 ### install gnome
-[Gnome](https://chrome.google.com/webstore/detail/gnome-shell-integration/gphhapmejobijbbhgpjhcjognlahblep?hl=pt-BR)
+:rocket: [Gnome](https://chrome.google.com/webstore/detail/gnome-shell-integration/gphhapmejobijbbhgpjhcjognlahblep?hl=pt-BR)
 
 ```bash
 $ sudo apt-get install -y gdebi gnome-tweak-tool gnome-shell-extensions chrome-gnome-shell
 ```
 
 ### extensions gnome 
-[Start overlay in application view](https://extensions.gnome.org/extension/1198/start-overlay-in-application-view/)
-[Dash to dock](https://extensions.gnome.org/extension/307/dash-to-dock/)
-[Alternate tab](https://extensions.gnome.org/extension/15/alternatetab/)
-[Sound output device chooser](https://extensions.gnome.org/extension/906/sound-output-device-chooser/
-[Remove panel app menu](https://extensions.gnome.org/extension/1084/remove-panel-app-menu/)
-[Extend panel menu](https://extensions.gnome.org/extension/1201/extend-panel-menu/)
-[Dash to panel](https://extensions.gnome.org/extension/1160/dash-to-panel/)
-[Scroll panel](https://extensions.gnome.org/extension/932/scroll-panel/)
-[Transparent gnome panel](https://extensions.gnome.org/extension/1099/transparent-gnome-panel/)
-[Bottom panel](https://extensions.gnome.org/extension/949/bottompanel/)
-[Mmod panel](https://extensions.gnome.org/extension/898/mmod-panel/)
-[Dash to panel](https://extensions.gnome.org/extension/1160/dash-to-panel/)
-[Gnome shutdown button](https://extensions.gnome.org/extension/1056/gnome-shutdown-button/)
+:rocket: [Start overlay in application view](https://extensions.gnome.org/extension/1198/start-overlay-in-application-view/)
+:rocket: [Dash to dock](https://extensions.gnome.org/extension/307/dash-to-dock/)
+:rocket: [Alternate tab](https://extensions.gnome.org/extension/15/alternatetab/)
+:rocket: [Sound output device chooser](https://extensions.gnome.org/extension/906/sound-output-device-chooser/)
+:rocket: [Remove panel app menu](https://extensions.gnome.org/extension/1084/remove-panel-app-menu/)
+:rocket: [Extend panel menu](https://extensions.gnome.org/extension/1201/extend-panel-menu/)
+:rocket: [Dash to panel](https://extensions.gnome.org/extension/1160/dash-to-panel/)
+:rocket: [Scroll panel](https://extensions.gnome.org/extension/932/scroll-panel/)
+:rocket: [Transparent gnome panel](https://extensions.gnome.org/extension/1099/transparent-gnome-panel/)
+:rocket: [Bottom panel](https://extensions.gnome.org/extension/949/bottompanel/)
+:rocket: [Mmod panel](https://extensions.gnome.org/extension/898/mmod-panel/)
+:rocket: [Dash to panel](https://extensions.gnome.org/extension/1160/dash-to-panel/)
+:rocket: [Gnome shutdown button](https://extensions.gnome.org/extension/1056/gnome-shutdown-button/)
 
 ### Ícons
 ```bash
@@ -106,9 +106,9 @@ $ sudo systemctl status docker
 ```bash
 $ docker ps
 ```
-```bash
-$ permissao
-```
+
+### Permission
+
 ```bash
 $ sudo usermod -aG docker $(whoami)
 ```
@@ -135,7 +135,9 @@ $ docker-compose --version
 
 ### Install apache2
 > var/www/html
-[Instalar apache](https://matheuslima.com.br/instalando-o-apache-php-74-mysql-lamp)
+
+:rocket: [Instalar apache](https://matheuslima.com.br/instalando-o-apache-php-74-mysql-lamp)
+
 ```bash
 $ sudo chmod 777 -R html
 ```
@@ -146,7 +148,7 @@ $ sudo apt-get install apache2
 $ libapache2-mod-php7.3
 ```
 ### NodeJS
-[Instalar node](https://linuxize.com/post/how-to-install-node-js-on-ubuntu-18.04/)
+:rocket: [Instalar node](https://linuxize.com/post/how-to-install-node-js-on-ubuntu-18.04/)
 ```bash
 $ sudo apt install nodejs
 ```
