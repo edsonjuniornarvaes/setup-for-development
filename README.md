@@ -1,7 +1,7 @@
 # Configure machine for development
 ##### configure machine for development using ubuntu version 18.
 
-### install gnome
+### Install gnome
 :rocket: [Gnome](https://chrome.google.com/webstore/detail/gnome-shell-integration/gphhapmejobijbbhgpjhcjognlahblep?hl=pt-BR)
 
 ```bash
