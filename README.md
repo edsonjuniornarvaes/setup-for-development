@@ -25,7 +25,7 @@ $ sudo apt-get install -y gdebi gnome-tweak-tool gnome-shell-extensions chrome-g
 
 ### Ícons
 ```bash
-$ wget -qO- https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/install.sh | DESTDIR="$HOME/.icons" sh
+$ sudo add-apt-repository ppa:varlesh-l/papirus-pack -y && sudo apt-get update && sudo apt-get install papirus-gtk-icon-theme -y
 ```
 
 ### Install make
@@ -45,37 +45,18 @@ $ sudo apt-get install git
 
 ```bash
 $ sudo apt install software-properties-common
-```
-```bash
 $ sudo add-apt-repository ppa:ondrej/php
-```
-```bash
 $ sudo apt update
-```
-```bash
-$ sudo apt-get install php7.2-cli
-```
-```bash
 $ sudo apt-get install php7.4-cli
-```
-```bash
 $ sudo apt-get install php-gd php-xml php7.4-mbstring
 ```
 
 ### Install composer
 ```bash
 $ sudo apt install wget php-cli php-zip unzip
-```
-```bash
 $ php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
-```
-```bash
 $ HASH="$(wget -q -O - https://composer.github.io/installer.sig)"
-```
-```bash
 $ php -r "if (hash_file('SHA384', 'composer-setup.php') === '$HASH') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
-```
-```bash
 $ sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
 ```
 
@@ -84,26 +65,11 @@ $ sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
 ### install docker
 ```bash
 $ sudo apt update
-```
-```bash
 $ sudo apt upgrade
-```
-```bash
 $ sudo apt-get install curl apt-transport-https ca-certificates software-properties-common
-```
-```bash
 $ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-```
-```bash
 $ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
-```
-```bash
 $ sudo systemctl status docker
-```
-```bash
-$ sudo systemctl status docker
-```
-```bash
 $ docker ps
 ```
 
@@ -111,25 +77,15 @@ $ docker ps
 
 ```bash
 $ sudo usermod -aG docker $(whoami)
-```
-```bash
 $ sudo usermod -aG docker $USER
-```
-```bash
 $ newgrp docker
 ```
 
 ### Docker compose
 ```bash
 $ sudo curl -L "https://github.com/docker/compose/releases/download/1.25.5/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
-```
-```bash
 $ sudo chmod +x /usr/local/bin/docker-compose
-```
-```bash
 $ sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
-```
-```bash
 $ docker-compose --version
 ```
 
@@ -140,47 +96,21 @@ $ docker-compose --version
 
 ```bash
 $ sudo chmod 777 -R html
-```
-```bash
 $ sudo apt-get install apache2 
-```
-```bash
 $ libapache2-mod-php7.3
 ```
 ### NodeJS
 :rocket: [Instalar node](https://linuxize.com/post/how-to-install-node-js-on-ubuntu-18.04/)
 ```bash
 $ sudo apt install nodejs
-```
-```bash
 $ sudo apt install npm
-```
-```bash
-$ sudo apt remove nodejs
-```
-```bash
-$ sudo npm cache clean --force
-```
-```bash
-$ sudo chown -R $USER /usr/local/lib
-```
-```bash
-$ sudo npm install -g typescript
 ```
 
 ### YARN
 ```bash
 $ curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
-```
-```bash
 $ echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
-```
-```bash
 $ sudo apt-get update && sudo apt-get install yarn
-```
-```bash
 $ sudo apt-get install --no-install-recommends yarn
-```
-```bash
 $ yarn --version
 ```
