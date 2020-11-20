@@ -9,19 +9,19 @@ $ sudo apt-get install -y gdebi gnome-tweak-tool gnome-shell-extensions chrome-g
 ```
 
 ### extensions gnome 
-:rocket: [Start overlay in application view](https://extensions.gnome.org/extension/1198/start-overlay-in-application-view/)··
-:rocket: [Dash to dock](https://extensions.gnome.org/extension/307/dash-to-dock/)··
-:rocket: [Alternate tab](https://extensions.gnome.org/extension/15/alternatetab/)··
-:rocket: [Sound output device chooser](https://extensions.gnome.org/extension/906/sound-output-device-chooser/)··
-:rocket: [Remove panel app menu](https://extensions.gnome.org/extension/1084/remove-panel-app-menu/)··
-:rocket: [Extend panel menu](https://extensions.gnome.org/extension/1201/extend-panel-menu/)··
-:rocket: [Dash to panel](https://extensions.gnome.org/extension/1160/dash-to-panel/)··
-:rocket: [Scroll panel](https://extensions.gnome.org/extension/932/scroll-panel/)··
-:rocket: [Transparent gnome panel](https://extensions.gnome.org/extension/1099/transparent-gnome-panel/)··
-:rocket: [Bottom panel](https://extensions.gnome.org/extension/949/bottompanel/)··
-:rocket: [Mmod panel](https://extensions.gnome.org/extension/898/mmod-panel/)··
-:rocket: [Dash to panel](https://extensions.gnome.org/extension/1160/dash-to-panel/)····
-:rocket: [Gnome shutdown button](https://extensions.gnome.org/extension/1056/gnome-shutdown-button/)··
+:rocket: [Start overlay in application view](https://extensions.gnome.org/extension/1198/start-overlay-in-application-view/)  
+:rocket: [Dash to dock](https://extensions.gnome.org/extension/307/dash-to-dock/)  
+:rocket: [Alternate tab](https://extensions.gnome.org/extension/15/alternatetab/)  
+:rocket: [Sound output device chooser](https://extensions.gnome.org/extension/906/sound-output-device-chooser/)  
+:rocket: [Remove panel app menu](https://extensions.gnome.org/extension/1084/remove-panel-app-menu/)  
+:rocket: [Extend panel menu](https://extensions.gnome.org/extension/1201/extend-panel-menu/)  
+:rocket: [Dash to panel](https://extensions.gnome.org/extension/1160/dash-to-panel/)  
+:rocket: [Scroll panel](https://extensions.gnome.org/extension/932/scroll-panel/)  
+:rocket: [Transparent gnome panel](https://extensions.gnome.org/extension/1099/transparent-gnome-panel/)  
+:rocket: [Bottom panel](https://extensions.gnome.org/extension/949/bottompanel/)  
+:rocket: [Mmod panel](https://extensions.gnome.org/extension/898/mmod-panel/)  
+:rocket: [Dash to panel](https://extensions.gnome.org/extension/1160/dash-to-panel/)  
+:rocket: [Gnome shutdown button](https://extensions.gnome.org/extension/1056/gnome-shutdown-button/)  
 
 ### Ícons
 ```bash
