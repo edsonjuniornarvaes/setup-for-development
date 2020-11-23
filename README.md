@@ -1,14 +1,20 @@
 # Configure machine for development
 ##### configure machine for development using ubuntu.
 
-### Install gnome
+### Install chrome
+```bash
+$ wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+$ sudo dpkg -i google-chrome-stable_current_amd64.deb
+```
+
+### Install Gnome
 :rocket: [Gnome](https://chrome.google.com/webstore/detail/gnome-shell-integration/gphhapmejobijbbhgpjhcjognlahblep?hl=pt-BR)
 
 ```bash
 $ sudo apt-get install -y gdebi gnome-tweak-tool gnome-shell-extensions chrome-gnome-shell
 ```
 
-### extensions gnome 
+### Extensions Gnome 
 :rocket: [Start overlay in application view](https://extensions.gnome.org/extension/1198/start-overlay-in-application-view/)  
 :rocket: [Dash to dock](https://extensions.gnome.org/extension/307/dash-to-dock/)  
 :rocket: [Alternate tab](https://extensions.gnome.org/extension/15/alternatetab/)  
@@ -20,20 +26,18 @@ $ sudo apt-get install -y gdebi gnome-tweak-tool gnome-shell-extensions chrome-g
 :rocket: [Transparent gnome panel](https://extensions.gnome.org/extension/1099/transparent-gnome-panel/)  
 :rocket: [Bottom panel](https://extensions.gnome.org/extension/949/bottompanel/)  
 :rocket: [Mmod panel](https://extensions.gnome.org/extension/898/mmod-panel/)  
-:rocket: [Dash to panel](https://extensions.gnome.org/extension/1160/dash-to-panel/)  
 :rocket: [Gnome shutdown button](https://extensions.gnome.org/extension/1056/gnome-shutdown-button/)  
 
-### Ícons
+### Install Icons
 ```bash
-$ sudo add-apt-repository ppa:varlesh-l/papirus-pack -y && sudo apt-get update && sudo apt-get install papirus-gtk-icon-theme -y
+$ sudo add-apt-repository ppa: papirus / papirus
+$ sudo apt install papirus-icon-theme
 ```
 
-### Install make
+### Install Make
 
 ```bash
 $ sudo apt-get update
-```
-```bash
 $ sudo apt-get install make
 ```
 ### Install GIT
@@ -41,7 +45,7 @@ $ sudo apt-get install make
 $ sudo apt-get install git
 ```
 
-### Install php 
+### Install PHP 
 
 ```bash
 $ sudo apt install software-properties-common
@@ -51,26 +55,43 @@ $ sudo apt-get install php7.4-cli
 $ sudo apt-get install php-gd php-xml php7.4-mbstring
 ```
 
-### Install composer
+### Install Composer
 ```bash
-$ sudo apt install wget php-cli php-zip unzip
-$ php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
-$ HASH="$(wget -q -O - https://composer.github.io/installer.sig)"
-$ php -r "if (hash_file('SHA384', 'composer-setup.php') === '$HASH') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
+$ sudo apt update
+$ sudo apt install php-cli unzip
+$ cd ~
+$ curl -sS https://getcomposer.org/installer -o composer-setup.php
 $ sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
+```
+### Test the installation
+```bash
+$ composer
+```
+
+### DBeaver
+```bash
+$ sudo add-apt-repository ppa:serge-rider/dbeaver-ce
+$ sudo apt-get update
+$ sudo apt-get install dbeaver-ce
 ```
 
 ### Composer
 
-### install docker
+#### Check the version, in the following case is for versions greater than 20 of ubuntu.
+
+### Docker
 ```bash
 $ sudo apt update
-$ sudo apt upgrade
-$ sudo apt-get install curl apt-transport-https ca-certificates software-properties-common
+$ sudo apt install apt-transport-https ca-certificates curl software-properties-common
 $ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-$ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+$ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
+$ sudo apt update
+$ apt-cache policy docker-ce
+$ sudo apt install docker-ce
+```
+### Test the installation
+```bash
 $ sudo systemctl status docker
-$ docker ps
 ```
 
 ### Permission
@@ -81,7 +102,7 @@ $ sudo usermod -aG docker $USER
 $ newgrp docker
 ```
 
-### Docker compose
+### Docker Compose
 ```bash
 $ sudo curl -L "https://github.com/docker/compose/releases/download/1.25.5/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 $ sudo chmod +x /usr/local/bin/docker-compose
@@ -89,24 +110,14 @@ $ sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 $ docker-compose --version
 ```
 
-### Install apache2
-> var/www/html
-
-:rocket: [Instalar apache](https://matheuslima.com.br/instalando-o-apache-php-74-mysql-lamp)
-
-```bash
-$ sudo chmod 777 -R html
-$ sudo apt-get install apache2 
-$ libapache2-mod-php7.3
-```
-### NodeJS
+### Install NodeJS
 :rocket: [Instalar node](https://linuxize.com/post/how-to-install-node-js-on-ubuntu-18.04/)
 ```bash
 $ sudo apt install nodejs
 $ sudo apt install npm
 ```
 
-### YARN
+### Install YARN
 ```bash
 $ curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
 $ echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
