@@ -111,7 +111,6 @@ $ docker-compose --version
 ```
 
 ### Install NodeJS
-:rocket: [Instalar node](https://linuxize.com/post/how-to-install-node-js-on-ubuntu-18.04/)
 ```bash
 $ sudo apt install nodejs
 $ sudo apt install npm
